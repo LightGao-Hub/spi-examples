@@ -267,7 +267,7 @@ Spring的IOC（Inversion of Control）和SPI（Service Provider Interface）是�
 
 在Spring Boot应用中，`spring.factories`文件通常位于`META-INF/spring.factories`路径下。这个文件使用标准的Java properties格式，其中包含了各种Spring应用中需要自动化加载的配置信息，如下图：
 
-![image-20240320180210440](C:\Users\gaoliang1-jk\AppData\Roaming\Typora\typora-user-images\image-20240320180210440.png)
+![image03.png](picture%2Fimage03.png)
 
 开发者可以在`spring.factories`文件中注册各种扩展点，例如自定义的`EnableAutoConfiguration`、`BeanFactoryPostProcessor`、`ApplicationListener`等。这些扩展点可以是自己编写的类，也可以是第三方库提供的。
 
@@ -615,7 +615,7 @@ Spring框架在启动时会自动扫描所有jar包中`META-INF/spring.factories
 
 # 五、总结
 
-SPI（Service Provider Interface）是一种用于实现组件化和插件化的 Java 标准。通过 SPI，开发者可以定义服务接口，并允许外部实现这些接口，然后在运行时动态加载并使用这些实现。以下是 SPI 的主要特点和总结：
+总的来说SPI（Service Provider Interface）是一种用于实现组件化和插件化的 Java 标准。通过 SPI，开发者可以定义服务接口，并允许外部实现这些接口，然后在运行时动态加载并使用这些实现。以下是 SPI 的主要特点和总结：
 
 1. **灵活性和可扩展性：** SPI 允许系统在运行时动态地加载并使用外部实现，从而增加了系统的灵活性和可扩展性。系统可以根据需求动态选择和加载合适的实现，而无需在代码中显式指定。
 2. **松耦合：** SPI 通过接口和实现类的分离，实现了组件之间的松耦合。组件之间只通过接口进行通信，而不直接依赖具体的实现，使得组件更易于替换和升级。
